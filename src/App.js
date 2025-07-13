@@ -193,7 +193,7 @@ const totalCount = activeCount + debrisCount + launchCount + 1; // +1 for ISS
         tleLinesRef.current = tleText.trim().split("\n");
         loadMoreDebris();
       });
-  }, [selectedGroup, loadMoreDebris]);
+  }, [selectedGroup]);
 
   const loadMoreDebris = () => {
     const viewer = viewerInstance.current;
