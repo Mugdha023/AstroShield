@@ -193,7 +193,7 @@ const totalCount = activeCount + debrisCount + launchCount + 1; // +1 for ISS
         tleLinesRef.current = tleText.trim().split("\n");
         loadMoreDebris();
       });
-  }, [selectedGroup]);
+  }, [selectedGroup, loadMoreDebris]);
 
   const loadMoreDebris = () => {
     const viewer = viewerInstance.current;
@@ -539,7 +539,7 @@ return (
     <div
       style={{
         position: "absolute",
-        top: 60,
+        top: 100,
         right: 10,
         width: "320px",
         maxHeight: "90vh",
@@ -672,7 +672,7 @@ return (
 <div
   style={{
     position: "absolute",
-    top: "400px",  // adjust as needed to move it below
+    top: "450px",  // adjust as needed to move it below
     right: "10px",
     padding: "10px",
     background: "rgba(0,0,0,0.8)",
